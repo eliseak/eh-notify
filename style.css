@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    height: 1554px;
+    height: 1680px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,7 +9,7 @@ body{
     background-size: cover;
     max-width: 100%;
     color: white;
-    height: 475px;
+    height: 30.56%;
     border-top: 7px solid #2dcc70;
     display: flex;
     justify-content: center;
