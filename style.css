@@ -47,11 +47,15 @@ h1 span{
     color: #2dcc70;
 }
 
+/* Tamanho dos ícones de SO*/
+.banner > div:nth-child(1) > .alinhar-horizontal > .icon{
+    width: 45px;
+    height: 45px;
+} 
+
 .icon{
     margin-top: 5px;
     margin-right: 13px;
-    width: 45px;
-    height: 45px;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.500);
     display: flex;
@@ -65,6 +69,23 @@ h1 span{
 .icon > img{
     max-width: 50%;
 }
+
+.iconBig{
+    margin-top: 5px;
+    margin-right: 13px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconBig > img{
+    max-width: 50%;
+}
+
+
 
 .alinhar-horizontal{
     display: flex;
