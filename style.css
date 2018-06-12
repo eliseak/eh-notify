@@ -4,6 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.alinhar-horizontal{
+    display: flex;
+}
+
 .banner{
     background-image: url(img/background.png);
     background-size: cover;
@@ -15,7 +19,6 @@ body{
     justify-content: center;
     overflow: hidden;
 }
-
 
 .banner > div > p{
     font-size: 20px;
@@ -30,11 +33,29 @@ body{
     width: 400px;
 }
 
+
 .banner > div:nth-child(2) > img{
     margin: 0;
     display: none;
 }
 
+.details > .alinhar-horizontal{
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.details > .alinhar-horizontal > div{
+    margin: 0px 26px;
+    width: 23%;
+    text-align: center;
+}
+
+.details > .alinhar-horizontal > div > p{
+    font-size: 14px;
+    color: #919191;
+    line-height: 1.5;
+}
 
 h1{
     margin-top: 11%;
@@ -47,15 +68,11 @@ h1 span{
     color: #2dcc70;
 }
 
-/* Tamanho dos ícones de SO*/
-.banner > div:nth-child(1) > .alinhar-horizontal > .icon{
-    width: 45px;
-    height: 45px;
-} 
-
 .icon{
     margin-top: 5px;
     margin-right: 13px;
+    width: 45px;
+    height: 45px;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.500);
     display: flex;
@@ -71,12 +88,11 @@ h1 span{
 }
 
 .iconBig{
-    margin-top: 5px;
-    margin-right: 13px;
-    width: 90px;
-    height: 90px;
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
     border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.500);
+    background-color: #2dcc70;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,11 +102,6 @@ h1 span{
 }
 
 
-
-.alinhar-horizontal{
-    display: flex;
-}
-
 @media(min-width: 768px){
 
     .banner > div:nth-child(1){
@@ -99,7 +110,6 @@ h1 span{
     .banner > div:nth-child(2){
         margin: 80px 40px;
     }
-    
 
     .banner > div:nth-child(2) > img{
         width: 373px;
