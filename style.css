@@ -65,6 +65,7 @@ body{
     border: none;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     background-color: #2dcc70;
 }
 .email > button:focus {
@@ -172,6 +173,11 @@ iframe{
     font-size: 14px;
     color: #919191;
     line-height: 1.6;
+}
+
+
+.talk{
+    
 }
 
 .alinhar-horizontal{
