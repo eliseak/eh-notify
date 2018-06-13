@@ -149,11 +149,10 @@ iframe{
 }
 
 .newsletter > div{
-    padding: 27px 47px;
+    margin: 0 auto;
+    padding: 27px 0;
     width: 450px;
-}
-
-.newsletter > div{
+    min-width: 380px;
     display: block;
 }
 
@@ -175,10 +174,55 @@ iframe{
     line-height: 1.6;
 }
 
+.photos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px auto 45px;
+    min-width: 328px;
+}
+
+.photos > div{
+    margin: 2px;
+    height: 42px;
+    background-color: #2dcc70;
+}
+
+.photos img{
+    margin: 0;
+    padding: 0;
+    width: 42px;
+}
+
+.photos img:hover{
+    filter: opacity(50%);
+
+}
 
 .testimony{
-    padding: auto auto;
     text-align: center;
+}
+
+.testimony p{
+    font-size: 16px;
+    color: #919191;
+    line-height: 1.6;
+}
+
+.testimony p:nth-child(1){
+    margin: 42px auto 0;
+    font-style: italic;
+    width: 55%;
+}
+.testimony p:nth-child(2){ 
+    margin: 13px auto;
+    color: black;
+    font-weight: bold;
+}
+
+.testimony .font-mini{
+    font-size: 14px;
 }
 
 .alinhar-horizontal{
