@@ -4,10 +4,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.alinhar-horizontal{
-    display: flex;
-}
-
 .banner{
     background-image: url(img/background.png);
     background-size: cover;
@@ -39,23 +35,52 @@ body{
     display: none;
 }
 
-.details > .alinhar-horizontal{
-    margin: 50px auto;
+.details{
+    margin: 50px auto 32px;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap
 }
 
-.details > .alinhar-horizontal > div{
+.details > div{
     margin: 0px 26px;
     width: 312px;
     text-align: center;
 }
 
-.details > .alinhar-horizontal > div > p{
+.details > div > p{
     font-size: 14px;
     color: #919191;
     line-height: 1.5;
+}
+
+.email > button{
+    margin-top: 5px;
+    margin-left: -5px;
+    padding: 0;
+    height: 44px;
+    width: 117px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    background-color: #2dcc70;
+}
+.email > button:focus {
+    outline:0;
+}
+.email > input{
+    margin-top: 5px;
+    height: 42px;
+    width: 260px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.email > input:focus {
+    outline:0;
 }
 
 h1{
@@ -68,6 +93,11 @@ h1{
 h1 span{
     color: #2dcc70;
 }
+
+h3{
+    letter-spacing: 0.55px;
+}
+
 
 .icon{
     margin-top: 5px;
@@ -103,6 +133,52 @@ h1 span{
 }
 
 
+iframe{
+    display:block;
+    width:100%;
+    border-radius: 10px;
+}
+
+.newsletter{
+    background-color: #E3E3E3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.newsletter > div{
+    padding: 27px 47px;
+    width: 450px;
+}
+
+.newsletter > div{
+    display: block;
+}
+
+.newsletter > div:nth-child(2){
+    padding-top: 50px;
+    padding-bottom: 52px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsletter h3{
+    margin-bottom: 15px;
+}
+
+.newsletter p{
+    font-size: 14px;
+    color: #919191;
+    line-height: 1.6;
+}
+
+.alinhar-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media(min-width: 768px){
 
     .banner > div:nth-child(1){
@@ -117,4 +193,5 @@ h1 span{
         display: flex;
         align-items: flex-end;
     }
+
 }
